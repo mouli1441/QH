@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Media Recorder API</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <video id="gum" playsinline autoplay muted controls preload="metadata"></video>
+      <video id="recorded" playsinline loop>
+        
+      <!-- <div id="overlay">Tell me about yourself </div> -->
+      </video>
+
+   
+     
+    <div>
+        <button id="start">Start camera</button>
+        <button id="record" disabled>Record</button>
+        <button id="play" disabled>Play</button>
+        <button id="download" disabled>Download</button>
+        <button id="nextbtn">Next Question </button>
+      </div>
+      
+      <div>
+        <p>
+          Echo cancellation: <input type="checkbox" id="echoCancellation" />
+        </p>
+      </div>
+
+     
+      <div class="overlay">
+        <h2>Tell me something about yourself</h2>
+      </div>
+      <div>
+        <span id="errorMsg"></span>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
